@@ -58,4 +58,31 @@
 >	Google Play Services   
 >	Android SDK Command-line Tools   
 >	Intel x86 Emulator Accelerator(HAXM installer)   
->	
+> 옆 메뉴에 있는 Device Manager 에서 Create Device해서 NexusX5 or Nexus5 및 API 29 ~ 32 중 하나 선택하여 디바이스 생성하기   
+> (해당 설치파일이 없다면 없어도 무관합니다.)   
+> (Android Studio 종료 후에 C:\Users\[사용자명]\.android 내에 있는 debug.keystore파일 삭제)    
+#### 코르도바 앱 만들기
+> C:\HybirdProject에 들어가기 (위에 설명함)   
+> cordova create (폴더명) com.example.test (앱이름) -d로 코르도바 앱 만들기   
+> cd (폴더명)한 다음 cordova platform add android해서 플랫폼 추가하기   
+> 다 한 다음 cordova requirements해서 경로 및 설치가 다 되었는지 확인하기   
+> 확인이 끝난 후 Android Studio을 실행 시키고 상단 메뉴에 File 클릭하고 open을 클릭하기   
+> C:\HybirdProject\(폴더명)\platforms\android 선택하고 설정 다운로드 다 될때 까지 기다리기   
+#### 코르도바 앱 설정하기
+> 상단 경로 표시가 되어 있는 곳에서 app을 클릭하고 build.gradle(:app)을 클릭하기   
+> -android 밑에 namespace 위에 이 코드 집어 넣기   
+> packagingOptions {   
+>       exclude 'META-INF/DEPENDENCIES.txt'   
+>       exclude 'META-INF/LICENSE.txt'   
+>       exclude 'META-INF/NOTICE.txt'   
+>       exclude 'META-INF/NOTICE'   
+>       exclude 'META-INF/LICENSE'   
+>       exclude 'META-INF/DEPENDENCIES'   
+>       exclude 'META-INF/notice.txt'   
+>       exclude 'META-INF/license.txt'   
+>       exclude 'META-INF/dependencies.txt'   
+>       exclude 'META-INF/LGPL2.1'   
+>   }   
+> AndroidMainfast.xml에서 application 태그 안에 이 설정 코드 추가하기   
+> android:largeHeap="true"   
+> 다 한 다음 
