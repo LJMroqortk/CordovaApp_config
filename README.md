@@ -37,3 +37,25 @@
 > npm update -g 명령어 치기   
 > npm install -g phonegap 설치하기   
 > npm install -g cordova 설치하기   
+#### Android Studio에 SDK 추가 설치 및 에뮬레이터 설정하기
+> Android Studio 실행하고 상단 메뉴에 Tool을 선택하고 SDK Manager 클릭   
+> SDK Tools 및 SDK Platform을 클릭하고 해당 설치할 파일 설치하기   
+> SDK platforms   
+>	Android 12L	32   
+>	Android 12	31   
+>	Android 11	30   
+>	Android R	29   
+> SDK Tools   
+>	Android SDK Tools   
+>	Android SDK Platfor-tools   
+>	Android SDK Build-tools   
+> Extra   
+>	Android Support Repository   
+>	Android Auto Desktop head unit emulator   
+>	Android auto API simulator   
+>	Google Repository   
+>	Google USB Driver   
+>	Google Play Services   
+>	Android SDK Command-line Tools   
+>	Intel x86 Emulator Accelerator(HAXM installer)   
+>	
