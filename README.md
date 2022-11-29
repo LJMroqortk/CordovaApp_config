@@ -85,4 +85,5 @@
 >   }   
 > AndroidMainfast.xml에서 application 태그 안에 이 설정 코드 추가하기   
 > android:largeHeap="true"   
-> 다 한 다음 
+> 다 한 다음 저장하기
+#### 이렇게 하면 설정 완료입니다.
